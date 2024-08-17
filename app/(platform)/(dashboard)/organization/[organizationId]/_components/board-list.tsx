@@ -49,12 +49,12 @@ export const BoardList = async () => {
             role="button"
             className="aspect-video relative h-full w-full bg-muted rounded-sm flex flex-col gap-y-1 items-center justify-center hover:opacity-75 transition"
           >
-            <p className="text-sm">New board</p>
-            <Plus className="w-5 h-5" strokeWidth={1.5} />
+            <p className="text-sm">Create new board</p>
+            <Plus className="w-6 h-6" strokeWidth={1.4} />
             <Hint
               sideOffset={20}
               
-              description={`Access your Boards`}
+              description={`Unlimited Boards`}
             >
               <HelpCircle
                 className="absolute bottom-2 right-2 h-[14px] w-[14px]"

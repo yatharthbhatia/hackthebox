@@ -6,8 +6,7 @@ import { useOrganization } from "@clerk/nextjs";
 
 import { Skeleton } from "@/components/ui/skeleton";
 
-
-export const Info = ()  => {
+export const Info = () => {
   const { organization, isLoaded } = useOrganization();
 
   if (!isLoaded) {
@@ -30,9 +29,10 @@ export const Info = ()  => {
         <p className="font-semibold text-xl">
           {organization?.name}
         </p>
-        <div className="flex items-center text-xs text-muted-foreground">
+        {/* <div className="flex items-center text-xs text-muted-foreground">
           <CreditCard className="h-3 w-3 mr-1" />
-        </div>
+          {isPro ? "Pro" : "Free"}
+        </div> */}
       </div>
     </div>
   );
@@ -47,8 +47,8 @@ Info.Skeleton = function SkeletonInfo() {
       <div className="space-y-2">
         <Skeleton className="h-10 w-[200px]" />
         <div className="flex items-center">
-          <Skeleton className="h-4 w-4 mr-2" />
-          <Skeleton className="h-4 w-[100px]" />
+          {/* <Skeleton className="h-4 w-4 mr-2" />
+          <Skeleton className="h-4 w-[100px]" /> */}
         </div>
       </div>
     </div>
