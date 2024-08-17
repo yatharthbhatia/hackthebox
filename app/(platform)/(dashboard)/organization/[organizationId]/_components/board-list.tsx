@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import { HelpCircle, User2 } from "lucide-react";
+import { HelpCircle, Plus, User2 } from "lucide-react";
 
 import { db } from "@/lib/db";
 import { Hint } from "@/components/hint";
@@ -56,9 +56,10 @@ export const BoardList = async () => {
             className="aspect-video relative h-full w-full bg-muted rounded-sm flex flex-col gap-y-1 items-center justify-center hover:opacity-75 transition"
           >
             <p className="text-sm">Create new board</p>
-            <span className="text-xs">
+            <Plus className="w-5 h-5" strokeWidth={1.5} />
+            {/* <span className="text-xs">
               {isPro ? "Unlimited" : `${MAX_FREE_BOARDS - availableCount} remaining`}
-            </span>
+            </span> */}
             <Hint
               sideOffset={20}
               
