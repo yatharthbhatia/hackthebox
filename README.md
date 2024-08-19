@@ -18,8 +18,6 @@ NEXT_PUBLIC_APP_URL=
 
 ### Setup Prisma
 
-Add MySQL Database (I used PlanetScale)
-
 ```shell
 npx prisma generate
 npx prisma db push
